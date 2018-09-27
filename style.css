@@ -6,6 +6,7 @@
     padding-left: 5em;
     padding-right: 15em;
     justify-content: space-around;
+    max-width: 100%;
 }
 
 .background {
@@ -50,8 +51,4 @@ h1  {
   font-size: 100px;
 }
 
-@media only screen and (max-device-width: 480px) {
-  .navigation {
-    display: none;
-  }
-}
+@media screen and (max-width: 320px) { @viewport { width: 320px; } }
