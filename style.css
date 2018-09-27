@@ -1,10 +1,15 @@
+@media screen and (max-width: 320px) { @viewport { width: 320px; } }
+
+body, html {
+  height: 100%;
+}
+
 .container {
   background-image: url('Flee Cobain.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  height: 100%;
+  /* background-attachment: fixed; */
   width: 90vw;
   border: 1px solid black;
   padding-left: 5em;
@@ -12,13 +17,13 @@
   justify-content: space-around;
 }
 
-.background {
+.mixtapeback {
   /* background-image: url('Flee Cobain.jpg'); */
   background-image: url('Flee Cobain2.jpg');
   background-position: center;
   background-repeat: no-repeat;
   /* background-size: cover; */
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   width:40%;
   height: 25%;
   display: block;
@@ -54,4 +59,10 @@ h1  {
   font-size: 100px;
 }
 
-@media screen and (max-width: 320px) { @viewport { width: 320px; } }
+/* img:hover {
+  transform: translate(10em,0);
+-webkit-transform: translate(10em,0);
+-moz-transform: translate(10em,0);
+-o-transform: translate(10em,0);
+-ms-transform: translate(10em,0);
+} */
