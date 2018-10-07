@@ -4,17 +4,22 @@ body, html {
   height: 100%;
 }
 
-.container {
+body {
   background-image: url('https://media.giphy.com/media/8qDaJxuAimdWrgg3eC/giphy.gif');
-  background-position: center;
-  background-repeat: no-repeat;
+  min-height: 100%;
   background-size: cover;
-  /* background-attachment: fixed; */
-  width: 90vw;
-  border: 1px solid black;
-  padding-left: 5em;
-  padding-right: 15em;
-  justify-content: space-around;
+  background-repeat: no-repeat;
+  font-family: 'Fields of Cathay';
+  padding: 30px 45px 10px;
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+  overflow-x: hidden;
+  text-transform: uppercase;
+  background-attachment: fixed;
+}
+
+
 }
 
 .mixtapeback {
@@ -36,10 +41,28 @@ li {
   padding: 1em 1em 0;
   margin: 0;
   list-style: none;
-  font-size: 3em;
+  font-size: 1em;
 }
 a {
-  color: #ffff00;
+  color: #fff;
+  list-style: none;
+}
+
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
 }
 
 nav {
@@ -52,17 +75,109 @@ nav {
   margin: 0 auto;
 }
 
-h1  {
-  text-align: center;
-  color: white;
+p {
   font-family: 'Gloria Hallelujah', cursive;
-  font-size: 100px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
-/* img:hover {
-  transform: translate(10em,0);
--webkit-transform: translate(10em,0);
--moz-transform: translate(10em,0);
--o-transform: translate(10em,0);
--ms-transform: translate(10em,0);
-} */
+h1  {
+  text-align: left;
+  color: white;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+h2 {
+display: block;
+font-family: 'Gloria Hallelujah', cursive;
+font-size: 30px;
+margin-block-start: 0.83em;
+margin-block-end: 0.83em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+}
+
+h3 {
+  display: block;
+  font-family: 'Gloria Hallelujah', cursive;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.album-details {
+  width: 53%;
+}
+
+.album-details p {
+  font-size: 20px;
+  font-weight: 100;
+  line-height: normal;
+  letter-spacing: 3.5px;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.album-details h2 {
+  color: #d0021b;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.album-details h3 {
+  display: block;
+  color: white;
+  letter-spacing: .7px;
+  margin-bottom: 35px;
+}
+
+.soundstream {
+  width: 312px;
+  height: 50px;
+  line-height: 46px;
+  display: block;
+  box-shadow: -17 0 6px 0 rgba(0, 0, 0, 0.06), 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 0 4px 0 rgba(0, 0, 0, 0.02);
+  border: solid 2px #ffffff;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 1.1px;
+  transition: .4s ease all;
+  }
+
+  .content {
+ display: flex;
+ -webkit-box-align: center;
+
+ align-items: center;
+
+ flex-wrap: wrap;
+ -webkit-box-pack: center;
+
+ justify-content: center;
+ position: absolute;
+ top: 43%;
+ left: 50%;
+
+ transform: translate(-50%, -50%);
+ width: 100%;
+ max-width: 1100px;
+ padding: 0px 50px;
+}
+
+.album-cover {
+  width: 15%;
+}
+
+.album-cover img {
+
+  box-shadow: 0 6px 17px 0 #0e0e0e;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
+}
