@@ -1,13 +1,21 @@
-@media screen and (max-width: 320px) { @viewport { width: 320px; } }
-
-body, html {
+html {
   height: 100%;
+}
+html, body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+html *, body * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-  background-image: url('https://media.giphy.com/media/8qDaJxuAimdWrgg3eC/giphy.gif');
   min-height: 100%;
-  background-size: contain;
+  background-image: url("imgs/giphy.gif");
+  background-size: cover;
   background-repeat: no-repeat;
   font-family: 'Fields of Cathay';
   padding: 30px 45px 10px;
@@ -19,94 +27,31 @@ body {
   background-attachment: fixed;
 }
 
-
+body a {
+  text-decoration: none;
 }
 
-.mixtapeback {
-  /* background-image: url('Flee Cobain.jpg'); */
-  background-image: url('Flee Cobain2.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  /* background-size: cover; */
-  /* background-attachment: fixed; */
-  width:40%;
-  height: 25%;
-  display: block;
-  margin: 0 auto;
-}
-
-li {
-  text-align: center;
-  display: inline-block;
-  padding: 1em 1em 0;
-  margin: 0;
-  list-style: none;
-  font-size: 1em;
-}
-a {
-  color: #fff;
-  list-style: none;
-}
-
-
-a:link {
-    text-decoration: none;
-}
-
-a:visited {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-a:active {
-    text-decoration: underline;
-}
-
-nav {
-  text-align: center;
-}
-
-.youtube {
-
-  display: block;
-  margin: 0 auto;
-}
-
-p {
-  font-family: 'Gloria Hallelujah', cursive;
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-
-h1  {
-  text-align: left;
-  color: white;
-  font-family: 'Gloria Hallelujah', cursive;
-}
-
-h2 {
-display: block;
-font-family: 'Gloria Hallelujah', cursive;
-font-size: 30px;
-margin-block-start: 0.83em;
-margin-block-end: 0.83em;
-margin-inline-start: 0px;
-margin-inline-end: 0px;
-}
-
-h3 {
-  display: block;
-  font-family: 'Gloria Hallelujah', cursive;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 1100px;
+  padding: 0px 50px;
 }
 
 .album-details {
@@ -125,59 +70,219 @@ h3 {
 
 .album-details h2 {
   color: #d0021b;
+  font-size: 95px;
   letter-spacing: 2px;
   margin-bottom: 5px;
 }
 
 .album-details h3 {
-  display: block;
-  color: white;
+  color: #d0021b;
+  font-size: 32px;
   letter-spacing: .7px;
   margin-bottom: 35px;
 }
 
-.soundstream {
+.album-cover {
+  width: 47%;
+}
+
+.album-cover img {
+  -webkit-box-shadow: 0 6px 17px 0 #0e0e0e;
+          box-shadow: 0 6px 17px 0 #0e0e0e;
+          max-width: 400px;
+          display: block;
+          margin: 0 auto;
+}
+
+.streamdownload {
   width: 312px;
   height: 50px;
   line-height: 46px;
   display: block;
-  box-shadow: -17 0 6px 0 rgba(0, 0, 0, 0.06), 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 0 4px 0 rgba(0, 0, 0, 0.02);
+  -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.06), 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 0 4px 0 rgba(0, 0, 0, 0.02);
+          box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.06), 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 0 4px 0 rgba(0, 0, 0, 0.02);
   border: solid 2px #ffffff;
   color: #fff;
   font-size: 18px;
   text-align: center;
   letter-spacing: 1.1px;
+  -webkit-transition: .4s ease all;
+  -o-transition: .4s ease all;
   transition: .4s ease all;
+}
+
+.streamdownload:hover {
+  color: #932f2f;
+  background: #fff;
+}
+
+.streamdownload i {
+  margin-right: 10px;
+}
+
+.enter-btn {
+  width: 140px;
+  height: 40px;
+  line-height: 36px;
+  margin: 0 auto 40px auto;
+  display: block;
+  background-color: transparent;
+  -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.06), 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 0 4px 0 rgba(0, 0, 0, 0.02);
+          box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.06), 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 0 4px 0 rgba(0, 0, 0, 0.02);
+  font-size: 18px;
+  letter-spacing: 1.1px;
+  text-align: center;
+  color: #fff;
+  -webkit-transition: .4s ease all;
+  -o-transition: .4s ease all;
+  transition: .4s ease all;
+  border: 2px solid #fff;
+}
+
+.enter-btn:hover {
+  background-color: #fff;
+  color: #932f2f;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.footer .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 110px;
+  margin: 15px auto;
+}
+
+.footer .socials li a {
+  color: #000;
+  background: #fff;
+  width: 19px;
+  display: block;
+  text-align: center;
+  padding: 3px 0;
+  border-radius: 50%;
+  text-align: center;
+  -webkit-transition: .3s ease all;
+  -o-transition: .3s ease all;
+  transition: .3s ease all;
+  font-size: 13px;
+}
+
+.footer .socials li a:hover {
+  color: #fff;
+  background: #000;
+}
+
+.footer .copyright {
+  color: #fff;
+  text-align: center;
+  font-weight: normal;
+  letter-spacing: 1.1px;
+  font-size: 14px;
+}
+
+
+
+@media screen and (max-width: 976px) {
+  body {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 20px 25px;
+  }
+
+  .album-details {
+    width: 100%;
+    text-align: center;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .album-details p {
+    text-align: center;
+  }
+
+  .album-details h2 {
+    font-size: 70px;
+  }
+
+  .album-details h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .album-cover {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .album-cover img {
+    max-width: 285px;
+    margin: 0 auto 15px auto;
+    display: block;
+  }
+
+  .streamdownload {
+    margin: 0 auto;
+    width: 230px;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .enter-btn {
+    font-size: 14px;
+  }
+
+  .footer {
+    bottom: -30px;
+  }
+
+
+
+@media screen and (max-width: 667px) {
+  .logo img {
+    margin: 0 auto;
+    display: block;
   }
 
   .content {
- display: flex;
- -webkit-box-align: center;
+    position: static;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+  }
 
- align-items: center;
+  .footer {
+    position: static;
+  }
 
- flex-wrap: wrap;
- -webkit-box-pack: center;
 
- justify-content: center;
- position: absolute;
- top: 43%;
- left: 50%;
 
- transform: translate(-50%, -50%);
- width: 100%;
- max-width: 1100px;
- padding: 0px 50px;
-}
-
-.album-cover {
-  width: 15%;
-}
-
-.album-cover img {
-
-  box-shadow: 0 6px 17px 0 #0e0e0e;
-  max-width: 400px;
+.youtube {
   display: block;
   margin: 0 auto;
 }
