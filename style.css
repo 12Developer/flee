@@ -7,7 +7,7 @@ body, html {
 body {
   background-image: url('https://media.giphy.com/media/8qDaJxuAimdWrgg3eC/giphy.gif');
   min-height: 100%;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   font-family: 'Fields of Cathay';
   padding: 30px 45px 10px;
