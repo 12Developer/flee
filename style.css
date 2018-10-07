@@ -120,29 +120,6 @@ body a {
   margin-right: 10px;
 }
 
-.enter-btn {
-  width: 140px;
-  height: 40px;
-  line-height: 36px;
-  margin: 0 auto 40px auto;
-  display: block;
-  background-color: transparent;
-  -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.06), 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 0 4px 0 rgba(0, 0, 0, 0.02);
-          box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.06), 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 0 4px 0 rgba(0, 0, 0, 0.02);
-  font-size: 18px;
-  letter-spacing: 1.1px;
-  text-align: center;
-  color: #fff;
-  -webkit-transition: .4s ease all;
-  -o-transition: .4s ease all;
-  transition: .4s ease all;
-  border: 2px solid #fff;
-}
-
-.enter-btn:hover {
-  background-color: #fff;
-  color: #932f2f;
-}
 
 .footer {
   position: absolute;
