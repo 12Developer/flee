@@ -3,13 +3,13 @@ html {
 }
 html, body {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
 }
 
 html *, body * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -36,19 +36,19 @@ body a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: absolute;
   top: 43%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 100%;
   max-width: 1100px;
   padding: 0px 50px;
@@ -88,10 +88,10 @@ body a {
 
 .album-cover img {
   -webkit-box-shadow: 0 6px 17px 0 #0e0e0e;
-          box-shadow: 0 6px 17px 0 #0e0e0e;
-          max-width: 400px;
-          display: block;
-          margin: 0 auto;
+  box-shadow: 0 6px 17px 0 #0e0e0e;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
 }
 
 .streamdownload {
@@ -100,7 +100,7 @@ body a {
   line-height: 46px;
   display: block;
   -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.06), 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 0 4px 0 rgba(0, 0, 0, 0.02);
-          box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.06), 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 0 4px 0 rgba(0, 0, 0, 0.02);
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.06), 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 0 4px 0 rgba(0, 0, 0, 0.02);
   border: solid 2px #ffffff;
   color: #fff;
   font-size: 18px;
@@ -136,8 +136,8 @@ body a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   max-width: 110px;
   margin: 15px auto;
 }
@@ -173,89 +173,89 @@ body a {
 
 
 @media screen and (max-width: 976px) {
-  body {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 20px 25px;
-  }
+body {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.content {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 20px 25px;
+}
 
-  .album-details {
-    width: 100%;
-    text-align: center;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
+.album-details {
+  width: 100%;
+  text-align: center;
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+}
 
-  .album-details p {
-    text-align: center;
-  }
+.album-details p {
+  text-align: center;
+}
 
-  .album-details h2 {
-    font-size: 70px;
-  }
+.album-details h2 {
+  font-size: 70px;
+}
 
-  .album-details h3 {
-    font-size: 24px;
-    margin-bottom: 30px;
-  }
+.album-details h3 {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
 
-  .album-cover {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    width: 100%;
-    padding: 20px 0;
-  }
+.album-cover {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  width: 100%;
+  padding: 20px 0;
+}
 
-  .album-cover img {
-    max-width: 285px;
-    margin: 0 auto 15px auto;
-    display: block;
-  }
+.album-cover img {
+  max-width: 285px;
+  margin: 0 auto 15px auto;
+  display: block;
+}
 
-  .streamdownload {
-    margin: 0 auto;
-    width: 230px;
-    font-size: 14px;
-    margin-bottom: 20px;
-  }
+.streamdownload {
+  margin: 0 auto;
+  width: 230px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
 
-  .enter-btn {
-    font-size: 14px;
-  }
+.enter-btn {
+  font-size: 14px;
+}
 
-  .footer {
-    bottom: -30px;
-  }
+.footer {
+  bottom: -30px;
+}
 
 
 
 @media screen and (max-width: 667px) {
   .logo img {
-    margin: 0 auto;
-    display: block;
-  }
+  margin: 0 auto;
+  display: block;
+}
 
-  .content {
-    position: static;
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none;
-  }
+.content {
+  position: static;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+}
 
-  .footer {
-    position: static;
-  }
+.footer {
+  position: static;
+}
 
 
 
