@@ -17,7 +17,7 @@ body {
   background-image: url("https://media.giphy.com/media/ywHiA66elffESlV0Vx/giphy.gif");
   background-size: cover;
   background-repeat: no-repeat;
-  font-family: 'Fields of Cathay';
+  font-family: 'Notable', sans-serif;
   padding: 30px 45px 10px;
   text-transform: uppercase;
   color: #fff;
@@ -69,14 +69,14 @@ body a {
 }
 
 .album-details h2 {
-  color: #d0021b;
+  color: #ffffff;
   font-size: 95px;
   letter-spacing: 2px;
   margin-bottom: 5px;
 }
 
 .album-details h3 {
-  color: #d0021b;
+  color: #ffffff;
   font-size: 32px;
   letter-spacing: .7px;
   margin-bottom: 35px;
@@ -95,7 +95,7 @@ body a {
 }
 
 .streamdownload {
-  width: 312px;
+  width: 150px;
   height: 50px;
   line-height: 46px;
   display: block;
@@ -262,4 +262,19 @@ body {
 .youtube {
   display: block;
   margin: 0 auto;
+}
+
+.blink {
+  -webkit-animation: pulse linear .5s infinite;
+  	animation: pulse linear .5s infinite;
+}
+@-webkit-keyframes pulse {
+	0% { width:200px; }
+	50% { width:340px; }
+	100% { width:200px; }
+}
+@keyframes pulse {
+	0% { width:200px; }
+	50% { width:340px; }
+	100% { width:200px; }
 }
