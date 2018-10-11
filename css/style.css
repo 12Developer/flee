@@ -263,18 +263,3 @@ body {
   display: block;
   margin: 0 auto;
 }
-
-.blink {
-  -webkit-animation: pulse linear .5s infinite;
-  	animation: pulse linear .5s infinite;
-}
-@-webkit-keyframes pulse {
-	0% { width:200px; }
-	50% { width:340px; }
-	100% { width:200px; }
-}
-@keyframes pulse {
-	0% { width:200px; }
-	50% { width:340px; }
-	100% { width:200px; }
-}
