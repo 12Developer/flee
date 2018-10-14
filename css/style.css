@@ -54,11 +54,11 @@ body a {
   padding: 0px 50px;
 }
 
-.album-details {
+.mixtape-details {
   width: 53%;
 }
 
-.album-details p {
+.mixtape-details p {
   font-size: 20px;
   font-weight: 100;
   line-height: normal;
@@ -68,25 +68,25 @@ body a {
   margin-bottom: 12px;
 }
 
-.album-details h2 {
+.mixtape-details h2 {
   color: #ffffff;
   font-size: 95px;
   letter-spacing: 2px;
   margin-bottom: 5px;
 }
 
-.album-details h3 {
+.mixtape-details h3 {
   color: #ffffff;
   font-size: 32px;
   letter-spacing: .7px;
   margin-bottom: 35px;
 }
 
-.album-cover {
+.mixtape-cover {
   width: 47%;
 }
 
-.album-cover img {
+.mixtape-cover img {
   -webkit-box-shadow: 0 6px 17px 0 #0e0e0e;
   box-shadow: 0 6px 17px 0 #0e0e0e;
   max-width: 400px;
@@ -188,7 +188,7 @@ body {
   padding: 20px 25px;
 }
 
-.album-details {
+.mixtape-details {
   width: 100%;
   text-align: center;
   -webkit-box-ordinal-group: 3;
@@ -196,20 +196,20 @@ body {
   order: 2;
 }
 
-.album-details p {
+.mixtape-details p {
   text-align: center;
 }
 
-.album-details h2 {
+.mixtape-details h2 {
   font-size: 50px;
 }
 
-.album-details h3 {
+.mixtape-details h3 {
   font-size: 15px;
   margin-bottom: 30px;
 }
 
-.album-cover {
+.mixtape-cover {
   -webkit-box-ordinal-group: 2;
   -ms-flex-order: 1;
   order: 1;
@@ -217,7 +217,7 @@ body {
   padding: 20px 0;
 }
 
-.album-cover img {
+.mixtape-cover img {
   max-width: 285px;
   margin: 0 auto 15px auto;
   display: block;
